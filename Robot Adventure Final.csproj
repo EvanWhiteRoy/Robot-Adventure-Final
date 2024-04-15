@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B92D767F-DA14-4774-87D0-7FFBD58B0F0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Robot_Adventure_Final</RootNamespace>
+    <AssemblyName>Robot Adventure Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_4f9efd4f-87d2-42d9-aed5-113e2689a7ca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-bonus-144751.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laser-gun-shot-sound-future-sci-fi-lazer-wobble-chakongaudio-174883.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_af21cba5-aa28-4c7f-bddf-7a574041192c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_d5017700-d145-42fc-a472-acaa0fddec23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_f8423325-afcc-467b-923d-a40cd9b5ac39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_3370f6c5-e1fd-480b-b8c8-cbdcff89f503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_13c3c153-247e-452a-80c5-1b0b47256cc3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_0ea89e5f-4504-4cb7-80cc-85a0d8df0770.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_c5c5495d-e7b7-4c58-99e3-9f4b4acc66a3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_6a9e7ffd-13b7-46b1-8238-a7b0e7f2c199.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_5e7f4e93-c5e1-4c33-ae28-69c423d296e9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Press_3-Marianne_Gagnon-771871963.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applause Light 2-SoundBible.com-356111200.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
